@@ -38,5 +38,11 @@ if (overlay && bankaiText) {
     if (overlay) {
         overlay.style.display = "none"
     }
+ window.onclick = function(event) {
+    const overlay = this.document.getElementById('bankai-overlay');
+    if (event.target == overlay) {
+        closeBankai()
+    }
+ }
  }
 displayZanpakuto()
