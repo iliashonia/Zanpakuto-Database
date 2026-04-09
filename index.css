@@ -1,0 +1,90 @@
+body {
+    background-color : #0a0a0a;
+    color :#ffffff;
+    font-family: 'Segoe UI', tamoha, geneva, verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align : center;
+    border-bottom: 3px solid #f35610;
+    margin-bottom: 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #1a1a1a;
+    border-left: 5px solid #f35610;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #252525;
+}
+
+h3{
+    color:#f35610;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.card-image {
+    width: 100%px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content : center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#bankai-text {
+    font-size: 5rem;
+    color: #f35610;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    animation: bankai-flare 0.5s ease-out;
+}
+
+@keyframes bankai-flare {
+    from { transform: scale(0.5); opacity:0;}
+    to { transform: scale(1); opacity: 1;}
+}
+
+.bankai-btn {
+    background-color: #f35610;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.bankai-btn:hover {
+    background-color: #ff7433;
+}
+
+#overlay-content {
+    text-align: center;
+}
